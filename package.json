@@ -1,0 +1,36 @@
+{
+  "name": "string-rope",
+  "version": "0.0.1",
+  "repository": "drobson03/string-rope",
+  "unpkg": "dist/index.min.js",
+  "umd:main": "dist/index.min.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "author": {
+    "name": "Darcy Robson"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "modes": {
+    "default": "src/index.js"
+  },
+  "devDependencies": {
+    "bundt": "^1.1.5"
+  },
+  "scripts": {
+    "build": "bundt"
+  }
+}
